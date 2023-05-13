@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BM FIMS STUDIO </title>
+	<style>
+		/* Estilo para la sección del encabezado */
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		/* Estilo para la sección de contenido */
+		section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 20px;
+		}
+
+		/* Estilo para cada uno de los elementos de la sección de contenido */
+		section div {
+			background-color: #fff;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+			flex: 1 1 calc(33.3% - 20px);
+			margin: 10px;
+			overflow: hidden;
+			padding: 10px;
+			position: relative;
+			transition: all 0.3s ease-in-out;
+		}
+
+		/* Efecto de transformación 3D */
+		section div:hover {
+			transform: rotateY(20deg) rotateX(20deg);
+		}
+
+		/* Efecto de transición */
+		section div:hover::before {
+			background-color: rgba(0, 0, 0, 0.7);
+			content: '';
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: -1;
+		}
+
+		/* Animación */
+		section div h2 {
+			animation: slideInLeft 1s forwards;
+		}
+
+		/* Keyframes para la animación */
+		@keyframes slideInLeft {
+			0% {opacity: 0; transform: translateX(-100px);}
+			100% {opacity: 1; transform: translateX(0);}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Bienvenidos A BM FILMS STUDIO </h1>
+	</header>
+	<section>
+		<div>
+			<h2>BM FILMS STUDIO 2D</h2>
+			<img src="https://scontent.fhex8-1.fna.fbcdn.net/v/t1.6435-9/51423727_2021458134606670_8830632951633936384_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFfC4EXUR810LClo5cgoH71EDuueWc0ci8QO655ZzRyL8AMUMGYLSqkthNNu_02RE8LIQdpEfSCa0OgOldIf582&_nc_ohc=TpmSDmCbXD8AX8zz5it&_nc_ht=scontent.fhex8-1.fna&oh=00_AfAAl5BaKdQOjAW3JTpKggg6SufYclddXzUGSLBN-kPQzQ&oe=6484873A" alt="Imagen de ejemplo">
+			<p>Este es un ejemplo de transformación 2D. Al pasar el mouse sobre el elemento, éste gira 180 grados.</p>
+		</div>
+		<div>  <video width="640" height="360" controls>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU50Kvf73Hqy__7AcutOmg1G81qAs2KnToajhQ3rkfAn2jhdLdsx2Do1ResOeGlDc3UUg&usqp=CAU" alt="Imagen de ejemplo">
+            Tu navegador no admite el elemento de video.
+          </video>
+          </div>
+        
+        
+        
+        <div>
+			<h2>BERNARDO MORETA  3D</h2>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU50Kvf73Hqy__7AcutOmg1G81qAs2KnToajhQ3rkfAn2jhdLdsx2Do1ResOeGlDc3UUg&usqp=CAU" alt="Imagen de ejemplo">
+			<p>Este es un ejemplo de transformación 3D. Al pasar el mouse sobre el elemento, éste rota en un eje 3D.</p>
+		</div>
+		<div>
+			<h2>MORETA Transición</h2>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU50Kvf73Hqy__7AcutOmg1G81qAs2KnToajhQ3rkfAn2jhdLdsx2Do1ResOeGlDc3UUg&usqp=CAU" alt="Imagen de ejemplo">
+			<p>Este es un ejemplo de transición. Al pasar el mouse sobre el elemento, aparece un fondo semi-transparente sobre él.</p>
+		</div>
+		<div>
+			<h2>Animación</h2>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU50Kvf73Hqy__7AcutOmg1G81qAs2KnToajhQ3rkfAn2jhdLdsx2Do1ResOeGlDc3UUg&usqp=CAU" alt="Imagen de ejemplo">
+			<p>
+                
